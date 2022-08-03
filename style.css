@@ -25,7 +25,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     color: #fff;
-    height: 100%;
+
 }
 .container__section{
     padding: 60px 30px;
@@ -132,35 +132,50 @@
         padding: 20px;
     }
 }
-@media (min-width:1024px){
+@media (min-width:900px){
     .container{
         background-size: cover;
         height: 100vh;
     }
     .container__section{
         display: grid;
-        grid-template-columns: repeat(2,650px);
+        grid-template-columns: repeat(2,350px);
         grid-template-areas: "header txt";
         place-content: center;
-      padding: 20px 0px;
-      height: 100%;
+        column-gap: 6em;
     }
     .conteiner__header{
         grid-area: header;
     }
-    .container__title, .container__paragraph{
-        text-align: start;
+    .ilustracion{
+        width: 300px;
     }
     .container__txt, .social_media{
         grid-area: txt;
     }
-    .btn{
-        width: 45%;
-        height: 70px;
-        margin: 0;
+    .container__title{
+        font-size: 2em;
+    }
+    .container__paragraph{
+        font-size: 1em;
     }
     .social_media{
+        width: 40%;
+        height: 100px;
         position: absolute;
         bottom: 0;
+        right: 0;
+    }
+    .social__item{
+        font-size: 20px;
+        padding: 10px;
+  
+    }
+    .btn{
+        width: 65%;
+        height: 40px;
+        margin: 5% 15% ;
+        font-size: 20px;
+        border-radius: 30px;
     }
 }
